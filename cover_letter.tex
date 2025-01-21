@@ -1,0 +1,38 @@
+\documentclass[12pt,letterpaper,roman]{moderncv}
+
+\moderncvstyle{banking}
+\moderncvcolor{black}
+
+% 1 inch margins
+\usepackage[top=1in, bottom=2in, left=1in, right=1in]{geometry} % bottom margin is 2 inches to make room for the footer
+
+\usepackage{wallpaper} % for letterhead
+\ULCornerWallPaper{1}{letterhead.pdf} % pulls letterhead from letterhead.pdf and makes it the background of the document
+
+\usepackage{ragged2e} % provides \justifying
+
+\usepackage{lipsum} % for dummy text, delete when using real text
+
+% Ensure header and footer do not overlap the text area
+\setlength{\headheight}{1in} % Adjust the height of the header
+\setlength{\footskip}{1in}   % Adjust the height of the footer
+
+\firstname{Kevin} % Your first name
+\familyname{Navarrete-Parra} % Your last name
+
+\begin{document}
+
+\recipient{The Name of Your Recipient}{Your Recipient's Address\\Remember you can\\use multiple lines}
+\date{\today} % change to the date you are applying, if not today
+\opening{Dear Name of Recipient,} % Change to the name of the person you are addressing
+\closing{Sincerely,} % Change to the appropriate closing
+
+\makelettertitle % Print letter title
+\vspace*{1\baselineskip} % Add space between title and body. purely aesthetic, delete if you don't like it
+\justifying % Justify the text, deleting this will make it ragged right. I don't like ragged right, but you might
+
+\lipsum[1-5] % Replace with your cover letter, delete when using real text
+
+\makeletterclosing
+
+\end{document}
